@@ -35,3 +35,63 @@
 .course-review-empty,.history-empty{padding:18px 0;color:#84919e;font-size:13px}
 @media(max-width:970px){.course-details-grid{grid-template-columns:1fr}}
 @media(max-width:650px){.course-hero{flex-direction:column;padding:22px}.course-hero h1{font-size:28px}.course-mini-score{min-width:unset;width:100%}.detail-review-head{flex-direction:column}}
+/* Simple UX additions for course chips & badges */
+.course-chips, .modal-quick-pick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin: 12px 0 4px;
+}
+.modal-quick-pick {
+  margin: -8px 0 16px;
+}
+.modal-quick-pick small {
+  font-size: 11px;
+  color: #657285;
+  margin-right: 4px;
+}
+.chip {
+  border: 1px solid #dce5ea;
+  background: #f6f9fa;
+  color: #27344c;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 11px;
+}
+.chip span {
+  color: #217d87;
+  font-weight: 700;
+  margin-left: 3px;
+}
+.chip.active {
+  background: #217d87;
+  border-color: #217d87;
+  color: #fff;
+}
+.chip.active span {
+  color: #fff;
+}
+.lookup-links, .detail-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+.you-pill {
+  background: #e8f5f3;
+  color: #20786c;
+  border: 1px solid #cbe9e4;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 99px;
+  margin-left: 4px;
+}
+.course-mini-score em {
+  font-size: 14px;
+  color: #9aa4b1;
+  font-style: normal;
+}
